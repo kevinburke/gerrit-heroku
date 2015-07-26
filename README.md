@@ -23,3 +23,5 @@
     ```
     ssh-keygen -t rsa -b 4096
     ```
+
+    you may need to move these to ssh_host_key
