@@ -1,3 +1,10 @@
 # Install
 
-Set the buildpack
+Set Heroku environment variables:
+
+```
+GERRIT_DB_HOSTNAME
+GERRIT_DB_DATABASE
+GERRIT_DB_USERNAME
+GERRIT_DB_PASSWORD
+```
