@@ -25,3 +25,5 @@
     ```
 
     you may need to move these to the ssh_host_key.
+
+4. run the java init file
