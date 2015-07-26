@@ -1,5 +1,3 @@
-this will get gerrit set up on heroku
+# Install
 
-# Config Vars
-
-heroku config:set GERRIT_SITE=/app
+Set the buildpack
