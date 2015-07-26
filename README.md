@@ -16,7 +16,7 @@
     ```
 
     Projects will be placed in /app/projects - this should be handled for you by
-    the buildpack
+    the buildpack.
 
 3. Generate SSH keys. These will be used by Gerrit to check out code
 
@@ -24,4 +24,4 @@
     ssh-keygen -t rsa -b 4096
     ```
 
-    you may need to move these to ssh_host_key
+    you may need to move these to the ssh_host_key.
