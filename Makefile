@@ -7,4 +7,4 @@ deploy:
 	git push heroku master
 
 reindex:
-	java -jar bin/gerrit.war reindex
+	java -jar bin/gerrit.war reindex -d /app
