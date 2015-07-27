@@ -34,6 +34,8 @@ You can run `bin/gerrit.sh check` which will set them for you.
 
 # Install
 
+0. Create a Heroku app with `heroku create` (you'll need the Heroku Toolbelt)
+
 1. Add the Heroku buildpack
 
     ```bash
