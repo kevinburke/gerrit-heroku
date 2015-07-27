@@ -5,3 +5,6 @@ download:
 
 deploy:
 	git push heroku master
+
+reindex:
+	java -jar bin/gerrit.war reindex
