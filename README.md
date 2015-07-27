@@ -40,7 +40,7 @@ You can run `bin/gerrit.sh check` which will set them for you.
     heroku buildpacks:add https://github.com/kevinburke/heroku-buildpack-gerrit-runner
     ```
 
-2. Set Heroku environment variables:
+2. Set Heroku environment variables by running `heroku config:set VARNAME=value`
 
     ```
     GERRIT_DB_HOSTNAME
@@ -49,7 +49,7 @@ You can run `bin/gerrit.sh check` which will set them for you.
     GERRIT_DB_PASSWORD
     ```
 
-    Projects will be placed in /app/projects - this should be handled for you by
+    Repositories will be placed in /app/git - this should be handled for you by
     the buildpack.
 
 3. Generate SSH keys. These will be used by Gerrit to check out code
@@ -58,6 +58,7 @@ You can run `bin/gerrit.sh check` which will set them for you.
     ssh-keygen -t rsa -b 4096
     ```
 
-    you may need to move these to the ssh_host_key.
+    You may need to move these to the ssh_host_key; I'm not sure whether Gerrit
+    needs the private or public key or both.
 
-4. run the java init file
+4. You might need to run the initialization script: `java -jar bin/gerrit.war init -d /app`
