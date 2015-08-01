@@ -25,7 +25,8 @@ The error I saw in the Heroku logs was this:
 - copy over JARs to the build pack and copy them to the right places
 
 - set GERRIT_WEB_URL becaues heroku doesn't know what the app name is at
-  compile time and it's not in the environment i don't think
+  compile time and it's not in the environment i don't think. can maybe pull it
+  uot of RELEASE_DATA if you wanna be fancy
 
 
 
