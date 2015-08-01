@@ -24,6 +24,8 @@ The error I saw in the Heroku logs was this:
 
 - copy over JARs to the build pack and copy them to the right places
 
+- write the client secret from the environment to the secure config file
+
 The Internet suggested running java -jar bin/gerrit.war reindex to fix this
 error. I tried running this, was successful, but couldn't get the app to stop
 crashing with this error.
@@ -65,4 +67,3 @@ You can run `bin/gerrit.sh check` which will set them for you.
     needs the private or public key or both.
 
 4. You might need to run the initialization script: `java -jar bin/gerrit.war init -d /app`
-A
