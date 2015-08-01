@@ -21,6 +21,7 @@ The error I saw in the Heroku logs was this:
 2015-07-26T23:39:44.058422+00:00 app[web.1]: 	at com.google.gerrit.launcher.GerritLauncher.main(GerritLauncher.java:50)
 2015-07-26T23:39:44.058424+00:00 app[web.1]: 	at Main.main(Main.java:25)
 ```
+
 need to reindex in the compile script
 
 The Internet suggested running java -jar bin/gerrit.war reindex to fix this
