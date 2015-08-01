@@ -24,15 +24,11 @@ The error I saw in the Heroku logs was this:
 
 - copy over JARs to the build pack and copy them to the right places
 
-- write the client secret from the environment to the secure config file
+- set GERRIT_WEB_URL becaues heroku doesn't know what the app name is at
+  compile time and it's not in the environment i don't think
 
-- secure config might not exist at release time
 
-- release errors fail everything afterwards
 
-- errors with the bin/release script
-
-- something about config vars in the bin/release script
 
 The Internet suggested running java -jar bin/gerrit.war reindex to fix this
 error. I tried running this, was successful, but couldn't get the app to stop
