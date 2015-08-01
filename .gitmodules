@@ -1,0 +1,3 @@
+[submodule "git/All-Projects"]
+	path = git/All-Projects
+	url = git@github.com:kevinburke/gerrit-all-projects.git
