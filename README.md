@@ -28,6 +28,8 @@ The error I saw in the Heroku logs was this:
 
 - secure config might not exist at release time
 
+- release errors fail everything afterwards
+
 The Internet suggested running java -jar bin/gerrit.war reindex to fix this
 error. I tried running this, was successful, but couldn't get the app to stop
 crashing with this error.
