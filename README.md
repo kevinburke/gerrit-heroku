@@ -72,3 +72,4 @@ You can run `bin/gerrit.sh check` which will set them for you.
     needs the private or public key or both.
 
 4. You might need to run the initialization script: `java -jar bin/gerrit.war init -d /app`
+=
