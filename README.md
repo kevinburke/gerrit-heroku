@@ -32,6 +32,8 @@ The error I saw in the Heroku logs was this:
 
 - errors with the bin/release script
 
+- something about config vars in the bin/release script
+
 The Internet suggested running java -jar bin/gerrit.war reindex to fix this
 error. I tried running this, was successful, but couldn't get the app to stop
 crashing with this error.
