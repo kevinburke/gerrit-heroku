@@ -26,6 +26,8 @@ The error I saw in the Heroku logs was this:
 
 - write the client secret from the environment to the secure config file
 
+- secure config might not exist at release time
+
 The Internet suggested running java -jar bin/gerrit.war reindex to fix this
 error. I tried running this, was successful, but couldn't get the app to stop
 crashing with this error.
